@@ -5,31 +5,31 @@
   
   <title>My New Post | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="�����Զ����ؼ�###1���Զ������Ե���������ȡ
+  <meta name="description" content="如何自定义控件###1、自定义属性的声明和提取
 
-1��������Ҫ���Զ�������
-2����res/values/attrs.xml�ļ��ж�������
+1、分析需要的自定义属性
+2、在res/values/attrs.xml文件中定义声明
 
-12345678910111213&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;&amp;lt;resources&amp;gt;    &amp;lt;attr name=&quot;ico">
+12345678910111213&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;&amp;lt;resources&amp;gt;    &amp;lt;attr name=&quot;icon&quot; format=&quot;reference&quot;/&amp;gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="My New Post">
 <meta property="og:url" content="http://yoursite.com/2016/04/23/My-New-Post/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="�����Զ����ؼ�###1���Զ������Ե���������ȡ
+<meta property="og:description" content="如何自定义控件###1、自定义属性的声明和提取
 
-1��������Ҫ���Զ�������
-2����res/values/attrs.xml�ļ��ж�������
+1、分析需要的自定义属性
+2、在res/values/attrs.xml文件中定义声明
 
-12345678910111213&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;&amp;lt;resources&amp;gt;    &amp;lt;attr name=&quot;ico">
-<meta property="og:updated_time" content="2016-04-23T08:31:00.744Z">
+12345678910111213&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;&amp;lt;resources&amp;gt;    &amp;lt;attr name=&quot;icon&quot; format=&quot;reference&quot;/&amp;gt;">
+<meta property="og:updated_time" content="2016-04-23T08:40:08.066Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My New Post">
-<meta name="twitter:description" content="�����Զ����ؼ�###1���Զ������Ե���������ȡ
+<meta name="twitter:description" content="如何自定义控件###1、自定义属性的声明和提取
 
-1��������Ҫ���Զ�������
-2����res/values/attrs.xml�ļ��ж�������
+1、分析需要的自定义属性
+2、在res/values/attrs.xml文件中定义声明
 
-12345678910111213&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;&amp;lt;resources&amp;gt;    &amp;lt;attr name=&quot;ico">
+12345678910111213&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;&amp;lt;resources&amp;gt;    &amp;lt;attr name=&quot;icon&quot; format=&quot;reference&quot;/&amp;gt;">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -67,9 +67,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -100,86 +100,86 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="�����Զ����ؼ�"><a href="#�����Զ����ؼ�" class="headerlink" title="�����Զ����ؼ�"></a>�����Զ����ؼ�</h1><p>###1���Զ������Ե���������ȡ</p>
+        <h1 id="如何自定义控件"><a href="#如何自定义控件" class="headerlink" title="如何自定义控件"></a>如何自定义控件</h1><p>###1、自定义属性的声明和提取</p>
 <ul>
-<li>1��������Ҫ���Զ�������</li>
-<li>2����res/values/attrs.xml�ļ��ж�������</li>
+<li>1、分析需要的自定义属性</li>
+<li>2、在res/values/attrs.xml文件中定义声明</li>
 </ul>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line">&lt;resources&gt;</span><br><span class="line">    &lt;attr name="icon" format="reference"/&gt;</span><br><span class="line">    &lt;attr name="color" format="color"/&gt;</span><br><span class="line">    &lt;attr name="text" format="string"/&gt;</span><br><span class="line">    &lt;attr name="text_size" format="dimension"/&gt;</span><br><span class="line">    &lt;declare-styleable name="ChangeTextIconSizeWithColor"&gt;</span><br><span class="line">        &lt;attr name="icon"/&gt;</span><br><span class="line">        &lt;attr name="color"/&gt;</span><br><span class="line">        &lt;attr name="text"/&gt;</span><br><span class="line">        &lt;attr name="text_size"/&gt;</span><br><span class="line">    &lt;/declare-styleable&gt;</span><br><span class="line">&lt;/resources&gt;</span><br></pre></td></tr></table></figure>
 <ul>
-<li>3����layout xml�ļ��н���ʹ��</li>
-<li>4����Viwe�Ĺ��췽���н��л�ȡ</li>
+<li>3、在layout xml文件中进行使用</li>
+<li>4、在Viwe的构造方法中进行获取</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ChangeTextIconSizeWithColor);</span><br><span class="line">       <span class="keyword">int</span> n = a.getIndexCount();</span><br><span class="line">       <span class="comment">//Ҳ����ֱ�ӻ�ȡ����</span></span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">           <span class="keyword">int</span> attr = a.getIndex(i);</span><br><span class="line">           <span class="keyword">switch</span> (attr) &#123;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_color:</span><br><span class="line">                   mColor = a.getColor(attr, <span class="number">0xFF3343</span>);</span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_icon:</span><br><span class="line">                   BitmapDrawable drawable = (BitmapDrawable) a.getDrawable(attr);</span><br><span class="line">                   mBitmap = drawable.getBitmap();</span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_text:</span><br><span class="line">                   mText = a.getString(attr);</span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_text_size:</span><br><span class="line">                   mTextSize = a.getDimension(attr, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, <span class="number">11</span>, getResources().getDisplayMetrics()));</span><br><span class="line"></span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//��Դ����</span></span><br><span class="line">       a.recycle();</span><br></pre></td></tr></table></figure>
-<p>###2������onMeasure()</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ChangeTextIconSizeWithColor);</span><br><span class="line">       <span class="keyword">int</span> n = a.getIndexCount();</span><br><span class="line">       <span class="comment">//也可以直接获取属性</span></span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">           <span class="keyword">int</span> attr = a.getIndex(i);</span><br><span class="line">           <span class="keyword">switch</span> (attr) &#123;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_color:</span><br><span class="line">                   mColor = a.getColor(attr, <span class="number">0xFF3343</span>);</span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_icon:</span><br><span class="line">                   BitmapDrawable drawable = (BitmapDrawable) a.getDrawable(attr);</span><br><span class="line">                   mBitmap = drawable.getBitmap();</span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_text:</span><br><span class="line">                   mText = a.getString(attr);</span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_text_size:</span><br><span class="line">                   mTextSize = a.getDimension(attr, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, <span class="number">11</span>, getResources().getDisplayMetrics()));</span><br><span class="line"></span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//资源回收</span></span><br><span class="line">       a.recycle();</span><br></pre></td></tr></table></figure>
+<p>###2、测量onMeasure()</p>
 <ul>
-<li>1��������ģʽ��<ul>
+<li>1、测量的模式：<ul>
 <li>EXACTRY <ul>
-<li>����ȷֵģʽ�������ǽ��ؼ���layout_width���Ի���layout_height����ָ��Ϊ������ֵ��ʱ�򣬱���android:layout_width=”100dp”�� </li>
+<li>及精确值模式，当我们将控件的layout_width属性或者layout_height属性指定为具体数值的时候，比如android:layout_width=”100dp”。 </li>
 </ul>
 </li>
 <li>AT_MOST <ul>
-<li>����ֵģʽ�����ؼ���layout_width���Ի���layout_height����ָ��wrap_contentʱ�򣬿ؼ���Сһ�����ſؼ����ӿռ����ݵı仯���仯����ʱ�ؼ��ĳߴ�ֻҪ���������ؼ������������ߴ����� </li>
+<li>最大值模式，当控件的layout_width属性或者layout_height属性指定wrap_content时候，控件大小一般随着控件的子空间内容的变化而变化，此时控件的尺寸只要不操作父控件允许的最大尺寸就行 </li>
 </ul>
 </li>
 <li>UNSPECIFIED<ul>
-<li>��ָ��������ģʽ���������Ͷ��� ��һ����ScrollView����ListView�У�</li>
+<li>不指定测量的模式，想多大就多大 （一般在ScrollView或者ListView中）</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>2��MeasureSpec�������ࣩ<ul>
-<li>ͨ�������࣬�ͻ�ȡView�Ĳ���ģʽ��View��Ҫ���ƵĴ�С </li>
-<li>�����Ĵ�������һ��ģ�壬������û��ʲô�仯��<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line"><span class="comment">//super.onMeasure(widthMeasureSpec,heightMeasureSpec);//������������ȥ������������������</span></span><br><span class="line">    setMeasuredDimension(measureWidth(widthMeasureSpec), measureHeight(heightMeasureSpec));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>2、MeasureSpec（辅助类）<ul>
+<li>通过这个类，就获取View的测量模式和View想要绘制的大小 </li>
+<li>下面的代码就是一个模板，基本上没有什么变化的<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line"><span class="comment">//super.onMeasure(widthMeasureSpec,heightMeasureSpec);//这个方法跟进去就是下面的这个方法</span></span><br><span class="line">    setMeasuredDimension(measureWidth(widthMeasureSpec), measureHeight(heightMeasureSpec));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line">  * ��ȡ�ؼ��ĸ߶�</span><br><span class="line">  *</span><br><span class="line">  * <span class="doctag">@param</span> heightMeasureSpec</span><br><span class="line">  * <span class="doctag">@return</span></span><br><span class="line">  */</span></span><br><span class="line"> <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">measureHeight</span><span class="params">(<span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line">     <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">     <span class="comment">//ģʽ</span></span><br><span class="line">     <span class="keyword">int</span> mode = MeasureSpec.getMode(heightMeasureSpec);</span><br><span class="line">     <span class="comment">//��С</span></span><br><span class="line">     <span class="keyword">int</span> size = MeasureSpec.getSize(heightMeasureSpec);</span><br><span class="line">     <span class="keyword">if</span> (mode == MeasureSpec.EXACTLY) &#123;</span><br><span class="line">         result = size;</span><br><span class="line">     &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">         result = <span class="number">100</span>;  <span class="comment">//������ָ���õĿؼ��ĸ߶�</span></span><br><span class="line">         <span class="keyword">if</span> (mode == MeasureSpec.AT_MOST) &#123;</span><br><span class="line">             result = Math.min(result, size);</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">return</span> result;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<p>��ȡ���ȵĴ����ͻ�ȡ�߶ȵĲ�࣬�����Ͳ�д�ˣ�ͨ�������𣬾Ϳ������ɶԸ߶ȺͿ���ֵ���Զ�����</p>
-<p>###3������onLayout��ViewGroup��</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line">  * 获取控件的高度</span><br><span class="line">  *</span><br><span class="line">  * <span class="doctag">@param</span> heightMeasureSpec</span><br><span class="line">  * <span class="doctag">@return</span></span><br><span class="line">  */</span></span><br><span class="line"> <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">measureHeight</span><span class="params">(<span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line">     <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">     <span class="comment">//模式</span></span><br><span class="line">     <span class="keyword">int</span> mode = MeasureSpec.getMode(heightMeasureSpec);</span><br><span class="line">     <span class="comment">//大小</span></span><br><span class="line">     <span class="keyword">int</span> size = MeasureSpec.getSize(heightMeasureSpec);</span><br><span class="line">     <span class="keyword">if</span> (mode == MeasureSpec.EXACTLY) &#123;</span><br><span class="line">         result = size;</span><br><span class="line">     &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">         result = <span class="number">100</span>;  <span class="comment">//这个是指定好的控件的高度</span></span><br><span class="line">         <span class="keyword">if</span> (mode == MeasureSpec.AT_MOST) &#123;</span><br><span class="line">             result = Math.min(result, size);</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">return</span> result;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>获取宽度的代码和获取高度的差不多，这里就不写了，通过这里吗，就可以完成对高度和宽度值的自定义了</p>
+<p>###3、布局onLayout（ViewGroup）</p>
 <ul>
-<li>1��������View��λ��</li>
-<li>2�������ܵĽ�onMeasure�е�һЩ���������ƶ����˷�����(onLayout())</li>
-<li>3��requestLayout()<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onLayout</span><span class="params">(<span class="keyword">boolean</span> changed, <span class="keyword">int</span> left, <span class="keyword">int</span> top, <span class="keyword">int</span> right, <span class="keyword">int</span> bottom)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">final</span> <span class="keyword">int</span> childCount = getChildCount();</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; childCount; i++) &#123;</span><br><span class="line">           <span class="comment">//�õ�ÿһ��view</span></span><br><span class="line">           <span class="keyword">final</span> View child = getChildAt(i);</span><br><span class="line">           <span class="keyword">if</span> (child.getVisibility() == GONE) &#123;</span><br><span class="line">               <span class="keyword">continue</span>;</span><br><span class="line">           &#125;</span><br><span class="line"></span><br><span class="line">           left = caculateChildLeft();<span class="comment">//����childView  layout�����Ͻǵ�x����</span></span><br><span class="line">           top = caculateChildTop();<span class="comment">//����childView  layout�����Ͻ���y����</span></span><br><span class="line"></span><br><span class="line">           child.layout(left, top, left + childWidth, top + childHeight);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<li>1、决定子View的位置</li>
+<li>2、尽可能的将onMeasure中的一些方法操作移动到此方法中(onLayout())</li>
+<li>3、requestLayout()<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onLayout</span><span class="params">(<span class="keyword">boolean</span> changed, <span class="keyword">int</span> left, <span class="keyword">int</span> top, <span class="keyword">int</span> right, <span class="keyword">int</span> bottom)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">final</span> <span class="keyword">int</span> childCount = getChildCount();</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; childCount; i++) &#123;</span><br><span class="line">           <span class="comment">//拿到每一个view</span></span><br><span class="line">           <span class="keyword">final</span> View child = getChildAt(i);</span><br><span class="line">           <span class="keyword">if</span> (child.getVisibility() == GONE) &#123;</span><br><span class="line">               <span class="keyword">continue</span>;</span><br><span class="line">           &#125;</span><br><span class="line"></span><br><span class="line">           left = caculateChildLeft();<span class="comment">//计算childView  layout的左上角的x坐标</span></span><br><span class="line">           top = caculateChildTop();<span class="comment">//计算childView  layout的左上交的y坐标</span></span><br><span class="line"></span><br><span class="line">           child.layout(left, top, left + childWidth, top + childHeight);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>###4������onDraw</p>
+<p>###4、绘制onDraw</p>
 <ul>
-<li>1��������������</li>
-<li>2��invalidate()��UI�̣߳���postInvalidate()�����̣߳�</li>
-<li>3��Canvas.drawXXX()</li>
-<li>4��translate��rotate��scale��skew</li>
-<li>5��sava()��restore()<br>###5��onTouchEvent</li>
-<li>1����������<ul>
+<li>1、绘制内容区域</li>
+<li>2、invalidate()（UI线程），postInvalidate()（子线程）</li>
+<li>3、Canvas.drawXXX()</li>
+<li>4、translate、rotate、scale、skew</li>
+<li>5、sava()、restore()<br>###5、onTouchEvent</li>
+<li>1、触摸情况<ul>
 <li>ACTION_DOWN</li>
 <li>ACTION_MOVE</li>
 <li>ACTION_UP</li>
 </ul>
 </li>
-<li>2����ָ������Ҫ�����ĸ��ǿ��Ƶ�Ҳ����ActivePointer��<ul>
+<li>2、多指触摸（要决定哪个是控制的也就是ActivePointer）<ul>
 <li>ACTION_POINTER_DOWN</li>
 <li>ACTION_POINTER_UP</li>
 </ul>
 </li>
-<li>3��parent.requestDisallowInterceptTouchEvent(true)�����󸸿ؼ���Ҫ�����¼��������ӿؼ����أ�</li>
-<li>4��VelocityTracker</li>
+<li>3、parent.requestDisallowInterceptTouchEvent(true)（请求父控件不要拦截事件，交给子控件拦截）</li>
+<li>4、VelocityTracker</li>
 </ul>
-<p>###6��onInterceptTouchEvent��ViewGroup��</p>
+<p>###6、onInterceptTouchEvent（ViewGroup）</p>
 <ul>
-<li>1����������<ul>
+<li>1、触摸情况<ul>
 <li>ACTION_DOWN</li>
 <li>ACTION_MOVE</li>
 <li>ACTION_UP</li>
 </ul>
 </li>
-<li>2����ָ������Ҫ�����ĸ��ǿ��Ƶ�Ҳ����ActivePointer��<ul>
+<li>2、多指触摸（要决定哪个是控制的也就是ActivePointer）<ul>
 <li>ACTION_POINTER_DOWN</li>
 <li>ACTION_POINTER_UP</li>
 </ul>
 </li>
-<li>3�������Ƿ����ظ����� <ul>
-<li>�����Լ�ȥ��д�� </li>
+<li>3、决定是否拦截该手势 <ul>
+<li>可以自己去重写哈 </li>
 </ul>
 </li>
 </ul>
@@ -187,7 +187,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/04/23/My-New-Post/" data-id="cincw0a3k00006kvptb63ermy" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/04/23/My-New-Post/" data-id="cincw5qsa0000esvpehdf8yyy" class="article-share-link">Share</a>
       
       
     </footer>
@@ -198,7 +198,7 @@
   
   
     <a href="/2016/04/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -221,7 +221,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Arkiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li></ul>
     </div>
@@ -231,7 +231,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Siste innlegg</h3>
     <div class="widget">
       <ul>
         
@@ -256,7 +256,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
