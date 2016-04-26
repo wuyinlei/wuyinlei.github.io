@@ -5,15 +5,33 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
+  <meta name="description" content="title: 实现安卓的自动更新—
+简单实现安卓自动更新一般的安卓app都有自动更新功能，实现app的更新，以让用户体验新版本的功能，这里也是项目中用到的，今天就来总结一下，代码应该有点多，还请耐心点哈。安卓应用实现自动更新比较简单，这里跟大家介绍下：
+####第一步 服务器端：
+
+服务端提供一个借口，或者网址，我这里就用的服务器是tomcat，这里提供一个网址如下：12//也就是一个json数">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/04/26/实现安卓app的自动更新/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description">
+<meta property="og:description" content="title: 实现安卓的自动更新—
+简单实现安卓自动更新一般的安卓app都有自动更新功能，实现app的更新，以让用户体验新版本的功能，这里也是项目中用到的，今天就来总结一下，代码应该有点多，还请耐心点哈。安卓应用实现自动更新比较简单，这里跟大家介绍下：
+####第一步 服务器端：
+
+服务端提供一个借口，或者网址，我这里就用的服务器是tomcat，这里提供一个网址如下：12//也就是一个json数">
+<meta property="og:image" content="http://img.blog.csdn.net/20160301131931122">
+<meta property="og:image" content="http://img.blog.csdn.net/20160301131948044">
+<meta property="og:image" content="http://img.blog.csdn.net/20160301132008763">
+<meta property="og:image" content="http://img.blog.csdn.net/20160301132107186">
+<meta property="og:updated_time" content="2016-04-26T00:58:48.926Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description">
+<meta name="twitter:description" content="title: 实现安卓的自动更新—
+简单实现安卓自动更新一般的安卓app都有自动更新功能，实现app的更新，以让用户体验新版本的功能，这里也是项目中用到的，今天就来总结一下，代码应该有点多，还请耐心点哈。安卓应用实现自动更新比较简单，这里跟大家介绍下：
+####第一步 服务器端：
+
+服务端提供一个借口，或者网址，我这里就用的服务器是tomcat，这里提供一个网址如下：12//也就是一个json数">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20160301131931122">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,9 +80,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-实现安卓app的自动更新" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-实现安卓app的自动更新" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/04/26/实现安卓app的自动更新/" class="article-date">
   <time datetime="2016-04-26T00:52:09.424Z" itemprop="datePublished">2016-04-26</time>
@@ -110,241 +126,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-实现二维码的扫描和二维码的生成" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/04/25/实现二维码的扫描和二维码的生成/" class="article-date">
-  <time datetime="2016-04-24T23:51:45.041Z" itemprop="datePublished">2016-04-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/25/实现二维码的扫描和二维码的生成/">实现二维码的扫描和二维码的生成</a>
-    </h1>
+    <a href="/2016/04/25/实现二维码的扫描和二维码的生成/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">实现二维码的扫描和二维码的生成</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#实现二维码的扫描和二维码的生成</p>
-<p>###前言<br>之前自己一直想要去实现一个二维码的扫描和生成，但是一直拖到现在，今天趁着夜色落幕，气氛还算可以(各种声音的夹杂中)，完成了这个扫描和生成二维码的工具，在这里总结一下。<br>首先普及一下什么是二维码和二维码开源库</p>
-<p>###QR  Code</p>
-<ul>
-<li>QRCode简介：<ul>
-<li>QRCode全称Quick Response Code</li>
-<li>通过在一个矩形区域内使用黑白像素来进行编码</li>
-<li>高纠错性、高可用性、高识别性</li>
-</ul>
-</li>
-</ul>
-<p>###ZXing简介：</p>
-<ul>
-<li>ZXing是一个开放源码的，用Java实现的多种格式的1D/2D条形图像处理库，它包含了联系到其他语言的端口</li>
-<li>ZXing可以实现使用手机的内置的摄像头完成条形码的扫描和解码</li>
-<li>ZXing项目地址：<ul>
-<li><a href="https://github.com/zxing/zxing" target="_blank" rel="external">https://github.com/zxing/zxing</a></li>
-</ul>
-</li>
-</ul>
-<p>###项目开始前<br>我们可以看下这个zxing，我们不可能去下载整个项目然后让我们的项目去依赖他，因为他足足有125MB左右啊，再说我们只需要实现可以在手机上实现扫描和生成二维码就行了，所以就有大神们从里面抽取了部分有关这方面的类和方法，这里我们可以找一下资料，这样就会大大减少，不到1MB。<br>这里先上项目地址（在这里可以看到这个依赖库）：<a href="https://github.com/wuyinlei/LearnZxing" target="_blank" rel="external">https://github.com/wuyinlei/LearnZxing</a></p>
-<p>###项目第一步：扫描二维码功能实现</p>
-<ul>
-<li>完成工作的其实就是依赖库中的CaptureActivity.java，这里面已经为我们封装好了调用相机，解析二维码信息的类，并提供了返回值，我们只需要去调用，使用</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">       startActivityForResult(new Intent(MainActivity.this, CaptureActivity.class), 0);</span><br><span class="line"></span><br><span class="line">	然后重写onActivityResult(int requestCode, int resultCode, Intent data)这个方法，在这个方法中我们获取到扫描后获得的数据</span><br><span class="line"></span><br><span class="line">if (resultCode == RESULT_OK) &#123;</span><br><span class="line">            //接受返回的二维码数据</span><br><span class="line">            Bundle bundle = data.getExtras();</span><br><span class="line">            //这个key是在CaptureActivity中的this.setResult(RESULT_OK, resultIntent)查到的</span><br><span class="line">            String result = bundle.getString(&quot;result&quot;);</span><br><span class="line">            tvResult.setText(result);</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-<p>这个时候我们来看下实现的效果图：<br>这个是我用在线二维码生成器生成的一个二维码，这个时候我们看下扫描的结果。<br><img src="http://ww1.sinaimg.cn/large/006jcGvzjw1f387oncgnij30fb08vt9m.jpg" alt=""><br>扫描之后的结果：<br><img src="http://ww1.sinaimg.cn/large/006jcGvzjw1f387qlcttzj30hs08sjrw.jpg" alt=""></p>
-<p>好了，这个时候扫描的功能实现了</p>
-<p>###项目第二步：生成二维码功能实现<br>其实这个也是很简单的，因为library里面已经提供了一个工具类EncodingUtils.java(二维码生成工具)，这里面提供的这个方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">EncodingUtils.createQRCode(input, 500, 500, mCheckBox.isChecked() ? BitmapFactory.decodeResource(getResources(), R.mipmap.kenan) : null)</span><br><span class="line"></span><br><span class="line">这个方法传入四个参数</span><br><span class="line">/**</span><br><span class="line">     * 创建二维码</span><br><span class="line">     *</span><br><span class="line">     * @param content   content     创建的二维码中包含的信息</span><br><span class="line">     * @param widthPix  widthPix   宽度</span><br><span class="line">     * @param heightPix heightPix  高度</span><br><span class="line">     * @param logoBm    logoBm    是否在二维码中间加入自定义的图片</span><br><span class="line">     * @return 二维码</span><br><span class="line">     */</span><br></pre></td></tr></table></figure>
-<p>我们来看下布局文件吧，也是很简答的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;LinearLayout</span><br><span class="line">    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</span><br><span class="line">    xmlns:tools=&quot;http://schemas.android.com/tools&quot;</span><br><span class="line">    android:layout_width=&quot;match_parent&quot;</span><br><span class="line">    android:layout_height=&quot;match_parent&quot;</span><br><span class="line">    android:orientation=&quot;vertical&quot;</span><br><span class="line">    tools:context=&quot;com.example.wuyin.learnzxing.MainActivity&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;Button</span><br><span class="line">        android:id=&quot;@+id/btn_start_scan&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;</span><br><span class="line">        android:text=&quot;开始扫描&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextView</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;</span><br><span class="line">        android:text=&quot;Result : &quot;</span><br><span class="line">        android:textSize=&quot;16sp&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextView</span><br><span class="line">        android:id=&quot;@+id/result&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;</span><br><span class="line">        android:layout_marginTop=&quot;5dp&quot;</span><br><span class="line">        android:textSize=&quot;20sp&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;EditText</span><br><span class="line">        android:id=&quot;@+id/et_zxing&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;Button</span><br><span class="line">        android:id=&quot;@+id/make_qrcode&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;</span><br><span class="line">        android:text=&quot;创建二维码&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ImageView</span><br><span class="line">        android:id=&quot;@+id/showQrcode&quot;</span><br><span class="line">        android:layout_gravity=&quot;center&quot;</span><br><span class="line">        android:background=&quot;@mipmap/ic_launcher&quot;</span><br><span class="line">        android:layout_width=&quot;wrap_content&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;/&gt;</span><br><span class="line">    &lt;CheckBox</span><br><span class="line">        android:id=&quot;@+id/checkbox&quot;</span><br><span class="line">        android:text=&quot;是否在二维码中间生成图片&quot;</span><br><span class="line">        android:layout_width=&quot;wrap_content&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;/&gt;</span><br><span class="line"></span><br><span class="line">&lt;/LinearLayout&gt;</span><br></pre></td></tr></table></figure>
-<p>因为就一个方法调用，这里就不多做介绍了，大家有兴趣可以下载源码看下，这里不多做解释，直接来看下生成的二维码：<br>不需要生成中间自定义图片的二维码：<br><img src="http://ww4.sinaimg.cn/large/006jcGvzjw1f387xsjkwrj30hz0e2409.jpg" alt=""><br>生成中间自定义图片的二维码：<br><img src="http://ww2.sinaimg.cn/large/006jcGvzjw1f387yl2g8wj30hk0dxmz0.jpg" alt=""></p>
-<p>好了，整个项目到这就完事了，是不是很简单，这个也要归功于大牛们的很好的封装哈，有了他们的封装和开源，我们才能用简单的几行代码实现比较困难的需求。MainActivity.java中的代码也不是很多，这里就附上了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line">package com.example.wuyin.learnzxing;</span><br><span class="line"></span><br><span class="line">import android.content.Intent;</span><br><span class="line">import android.graphics.Bitmap;</span><br><span class="line">import android.graphics.BitmapFactory;</span><br><span class="line">import android.support.v7.app.AppCompatActivity;</span><br><span class="line">import android.os.Bundle;</span><br><span class="line">import android.support.v7.widget.ButtonBarLayout;</span><br><span class="line">import android.text.TextUtils;</span><br><span class="line">import android.util.Log;</span><br><span class="line">import android.view.View;</span><br><span class="line">import android.widget.Button;</span><br><span class="line">import android.widget.CheckBox;</span><br><span class="line">import android.widget.EditText;</span><br><span class="line">import android.widget.ImageView;</span><br><span class="line">import android.widget.TextView;</span><br><span class="line">import android.widget.Toast;</span><br><span class="line"></span><br><span class="line">import com.xys.libzxing.zxing.activity.CaptureActivity;</span><br><span class="line">import com.xys.libzxing.zxing.encoding.EncodingUtils;</span><br><span class="line"></span><br><span class="line">public class MainActivity extends AppCompatActivity &#123;</span><br><span class="line"></span><br><span class="line">    private Button btnStartScan, btnMakeQrcode;</span><br><span class="line"></span><br><span class="line">    private TextView tvResult,etZxing;</span><br><span class="line"></span><br><span class="line">    private ImageView showQrcode;</span><br><span class="line"></span><br><span class="line">    private CheckBox mCheckBox;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onCreate(Bundle savedInstanceState) &#123;</span><br><span class="line">        super.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line"></span><br><span class="line">        //扫描二维码</span><br><span class="line">        btnStartScan = (Button) findViewById(R.id.btn_start_scan);</span><br><span class="line">        btnStartScan.setOnClickListener(new MyClickListener());</span><br><span class="line">        tvResult = (TextView) findViewById(R.id.result);</span><br><span class="line"></span><br><span class="line">        //生成二维码</span><br><span class="line">        btnMakeQrcode = (Button) findViewById(R.id.make_qrcode);</span><br><span class="line">        btnMakeQrcode.setOnClickListener(new MyClickListener());</span><br><span class="line">        etZxing = (EditText) findViewById(R.id.et_zxing);</span><br><span class="line">        showQrcode = (ImageView) findViewById(R.id.showQrcode);</span><br><span class="line">        mCheckBox = (CheckBox) findViewById(R.id.checkbox);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 自定义的OnClickListener</span><br><span class="line">     */</span><br><span class="line">    class MyClickListener implements View.OnClickListener &#123;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public void onClick(View v) &#123;</span><br><span class="line">            if (v.getId() == R.id.btn_start_scan) &#123;</span><br><span class="line">                startActivityForResult(new Intent(MainActivity.this, CaptureActivity.class), 0);</span><br><span class="line">            &#125; else if (v.getId() == R.id.make_qrcode) &#123;</span><br><span class="line">                makeQrcode();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 生成二维码</span><br><span class="line">     */</span><br><span class="line">    private void makeQrcode() &#123;</span><br><span class="line">        String input = etZxing.getText().toString();</span><br><span class="line">        if (!TextUtils.isEmpty(input)) &#123;</span><br><span class="line">            //二维码生成工具类</span><br><span class="line">            Bitmap bitmap = EncodingUtils.createQRCode(input, 500, 500, mCheckBox.isChecked() ? BitmapFactory.decodeResource(getResources(), R.mipmap.kenan) : null);</span><br><span class="line">            showQrcode.setImageBitmap(bitmap);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            Toast.makeText(this, &quot;输入不能为空&quot;, Toast.LENGTH_SHORT).show();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onActivityResult(int requestCode, int resultCode, Intent data) &#123;</span><br><span class="line">        super.onActivityResult(requestCode, resultCode, data);</span><br><span class="line">        if (resultCode == RESULT_OK) &#123;</span><br><span class="line">            //接受返回的二维码数据</span><br><span class="line">            Bundle bundle = data.getExtras();</span><br><span class="line">            //这个key是在CaptureActivity中的this.setResult(RESULT_OK, resultIntent)查到的</span><br><span class="line">            String result = bundle.getString(&quot;result&quot;);</span><br><span class="line">            tvResult.setText(result);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/04/25/实现二维码的扫描和二维码的生成/" data-id="cinf8n7c30002vkvp7t87jlb1" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-如何自定义控件" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/04/23/如何自定义控件/" class="article-date">
-  <time datetime="2016-04-23T08:42:26.766Z" itemprop="datePublished">2016-04-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/23/如何自定义控件/">如何自定义控件</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="如何自定义控件"><a href="#如何自定义控件" class="headerlink" title="如何自定义控件"></a>如何自定义控件</h1><p>###1、自定义属性的声明和提取</p>
-<ul>
-<li>1、分析需要的自定义属性</li>
-<li>2、在res/values/attrs.xml文件中定义声明</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line">&lt;resources&gt;</span><br><span class="line">    &lt;attr name="icon" format="reference"/&gt;</span><br><span class="line">    &lt;attr name="color" format="color"/&gt;</span><br><span class="line">    &lt;attr name="text" format="string"/&gt;</span><br><span class="line">    &lt;attr name="text_size" format="dimension"/&gt;</span><br><span class="line">    &lt;declare-styleable name="ChangeTextIconSizeWithColor"&gt;</span><br><span class="line">        &lt;attr name="icon"/&gt;</span><br><span class="line">        &lt;attr name="color"/&gt;</span><br><span class="line">        &lt;attr name="text"/&gt;</span><br><span class="line">        &lt;attr name="text_size"/&gt;</span><br><span class="line">    &lt;/declare-styleable&gt;</span><br><span class="line">&lt;/resources&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>3、在layout xml文件中进行使用</li>
-<li>4、在Viwe的构造方法中进行获取</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ChangeTextIconSizeWithColor);</span><br><span class="line">       <span class="keyword">int</span> n = a.getIndexCount();</span><br><span class="line">       <span class="comment">//也可以直接获取属性</span></span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">           <span class="keyword">int</span> attr = a.getIndex(i);</span><br><span class="line">           <span class="keyword">switch</span> (attr) &#123;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_color:</span><br><span class="line">                   mColor = a.getColor(attr, <span class="number">0xFF3343</span>);</span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_icon:</span><br><span class="line">                   BitmapDrawable drawable = (BitmapDrawable) a.getDrawable(attr);</span><br><span class="line">                   mBitmap = drawable.getBitmap();</span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_text:</span><br><span class="line">                   mText = a.getString(attr);</span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">               <span class="keyword">case</span> R.styleable.ChangeTextIconSizeWithColor_text_size:</span><br><span class="line">                   mTextSize = a.getDimension(attr, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, <span class="number">11</span>, getResources().getDisplayMetrics()));</span><br><span class="line"></span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//资源回收</span></span><br><span class="line">       a.recycle();</span><br></pre></td></tr></table></figure>
-<p>###2、测量onMeasure()</p>
-<ul>
-<li>1、测量的模式：<ul>
-<li>EXACTRY <ul>
-<li>及精确值模式，当我们将控件的layout_width属性或者layout_height属性指定为具体数值的时候，比如android:layout_width=”100dp”。 </li>
-</ul>
-</li>
-<li>AT_MOST <ul>
-<li>最大值模式，当控件的layout_width属性或者layout_height属性指定wrap_content时候，控件大小一般随着控件的子空间内容的变化而变化，此时控件的尺寸只要不操作父控件允许的最大尺寸就行 </li>
-</ul>
-</li>
-<li>UNSPECIFIED<ul>
-<li>不指定测量的模式，想多大就多大 （一般在ScrollView或者ListView中）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>2、MeasureSpec（辅助类）<ul>
-<li>通过这个类，就获取View的测量模式和View想要绘制的大小 </li>
-<li>下面的代码就是一个模板，基本上没有什么变化的<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line"><span class="comment">//super.onMeasure(widthMeasureSpec,heightMeasureSpec);//这个方法跟进去就是下面的这个方法</span></span><br><span class="line">    setMeasuredDimension(measureWidth(widthMeasureSpec), measureHeight(heightMeasureSpec));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line">  * 获取控件的高度</span><br><span class="line">  *</span><br><span class="line">  * <span class="doctag">@param</span> heightMeasureSpec</span><br><span class="line">  * <span class="doctag">@return</span></span><br><span class="line">  */</span></span><br><span class="line"> <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">measureHeight</span><span class="params">(<span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line">     <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">     <span class="comment">//模式</span></span><br><span class="line">     <span class="keyword">int</span> mode = MeasureSpec.getMode(heightMeasureSpec);</span><br><span class="line">     <span class="comment">//大小</span></span><br><span class="line">     <span class="keyword">int</span> size = MeasureSpec.getSize(heightMeasureSpec);</span><br><span class="line">     <span class="keyword">if</span> (mode == MeasureSpec.EXACTLY) &#123;</span><br><span class="line">         result = size;</span><br><span class="line">     &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">         result = <span class="number">100</span>;  <span class="comment">//这个是指定好的控件的高度</span></span><br><span class="line">         <span class="keyword">if</span> (mode == MeasureSpec.AT_MOST) &#123;</span><br><span class="line">             result = Math.min(result, size);</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">return</span> result;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<p>获取宽度的代码和获取高度的差不多，这里就不写了，通过这里吗，就可以完成对高度和宽度值的自定义了</p>
-<p>###3、布局onLayout（ViewGroup）</p>
-<ul>
-<li>1、决定子View的位置</li>
-<li>2、尽可能的将onMeasure中的一些方法操作移动到此方法中(onLayout())</li>
-<li>3、requestLayout()<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onLayout</span><span class="params">(<span class="keyword">boolean</span> changed, <span class="keyword">int</span> left, <span class="keyword">int</span> top, <span class="keyword">int</span> right, <span class="keyword">int</span> bottom)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">final</span> <span class="keyword">int</span> childCount = getChildCount();</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; childCount; i++) &#123;</span><br><span class="line">           <span class="comment">//拿到每一个view</span></span><br><span class="line">           <span class="keyword">final</span> View child = getChildAt(i);</span><br><span class="line">           <span class="keyword">if</span> (child.getVisibility() == GONE) &#123;</span><br><span class="line">               <span class="keyword">continue</span>;</span><br><span class="line">           &#125;</span><br><span class="line"></span><br><span class="line">           left = caculateChildLeft();<span class="comment">//计算childView  layout的左上角的x坐标</span></span><br><span class="line">           top = caculateChildTop();<span class="comment">//计算childView  layout的左上交的y坐标</span></span><br><span class="line"></span><br><span class="line">           child.layout(left, top, left + childWidth, top + childHeight);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>###4、绘制onDraw</p>
-<ul>
-<li>1、绘制内容区域</li>
-<li>2、invalidate()（UI线程），postInvalidate()（子线程）</li>
-<li>3、Canvas.drawXXX()</li>
-<li>4、translate、rotate、scale、skew</li>
-<li>5、sava()、restore()<br>###5、onTouchEvent</li>
-<li>1、触摸情况<ul>
-<li>ACTION_DOWN</li>
-<li>ACTION_MOVE</li>
-<li>ACTION_UP</li>
-</ul>
-</li>
-<li>2、多指触摸（要决定哪个是控制的也就是ActivePointer）<ul>
-<li>ACTION_POINTER_DOWN</li>
-<li>ACTION_POINTER_UP</li>
-</ul>
-</li>
-<li>3、parent.requestDisallowInterceptTouchEvent(true)（请求父控件不要拦截事件，交给子控件拦截）</li>
-<li>4、VelocityTracker</li>
-</ul>
-<p>###6、onInterceptTouchEvent（ViewGroup）</p>
-<ul>
-<li>1、触摸情况<ul>
-<li>ACTION_DOWN</li>
-<li>ACTION_MOVE</li>
-<li>ACTION_UP</li>
-</ul>
-</li>
-<li>2、多指触摸（要决定哪个是控制的也就是ActivePointer）<ul>
-<li>ACTION_POINTER_DOWN</li>
-<li>ACTION_POINTER_UP</li>
-</ul>
-</li>
-<li>3、决定是否拦截该手势 </li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/04/23/如何自定义控件/" data-id="cinf8n7by0001vkvp03u8fpi6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/04/23/hello-world/" class="article-date">
-  <time datetime="2016-04-23T08:01:48.201Z" itemprop="datePublished">2016-04-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/23/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/04/23/hello-world/" data-id="cinf8n7bq0000vkvp55bk8cqx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
