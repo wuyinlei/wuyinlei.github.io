@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="title:一个仿网易、今日头条的图片游览器一个仿网易、今日头条的图片游览器好吧，我承认，这一阶段自己偷懒了，今天趁着周末，也没有面试，来记录一下最近的项目中用到的吧，一个仿网易、今日头条的图片游览器。实现也是很简单的，这里用到了git上的一个开源库PhotoView，大家可以下载研究一下。地址：https://github.com/chrisbanes/PhotoView项目引入就不多说，如果">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/05/02/一个仿网易、今日头条的图片游览器/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="title:一个仿网易、今日头条的图片游览器一个仿网易、今日头条的图片游览器好吧，我承认，这一阶段自己偷懒了，今天趁着周末，也没有面试，来记录一下最近的项目中用到的吧，一个仿网易、今日头条的图片游览器。实现也是很简单的，这里用到了git上的一个开源库PhotoView，大家可以下载研究一下。地址：https://github.com/chrisbanes/PhotoView项目引入就不多说，如果">
+<meta property="og:image" content="http://img.blog.csdn.net/20160416125312509">
+<meta property="og:updated_time" content="2016-05-02T12:23:48.145Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="title:一个仿网易、今日头条的图片游览器一个仿网易、今日头条的图片游览器好吧，我承认，这一阶段自己偷懒了，今天趁着周末，也没有面试，来记录一下最近的项目中用到的吧，一个仿网易、今日头条的图片游览器。实现也是很简单的，这里用到了git上的一个开源库PhotoView，大家可以下载研究一下。地址：https://github.com/chrisbanes/PhotoView项目引入就不多说，如果">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20160416125312509">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-一个仿网易、今日头条的图片游览器" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/02/一个仿网易、今日头条的图片游览器/" class="article-date">
+  <time datetime="2016-05-02T12:23:41.666Z" itemprop="datePublished">2016-05-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="title-一个仿网易、今日头条的图片游览器"><a href="#title-一个仿网易、今日头条的图片游览器" class="headerlink" title="title:一个仿网易、今日头条的图片游览器"></a>title:一个仿网易、今日头条的图片游览器</h2><h1 id="一个仿网易、今日头条的图片游览器"><a href="#一个仿网易、今日头条的图片游览器" class="headerlink" title="一个仿网易、今日头条的图片游览器"></a>一个仿网易、今日头条的图片游览器</h1><p>好吧，我承认，这一阶段自己偷懒了，今天趁着周末，也没有面试，来记录一下最近的项目中用到的吧，一个仿网易、今日头条的图片游览器。<br>实现也是很简单的，这里用到了git上的一个开源库PhotoView，大家可以下载研究一下。地址：<a href="https://github.com/chrisbanes/PhotoView" target="_blank" rel="external">https://github.com/chrisbanes/PhotoView</a><br>项目引入就不多说，如果有疑问，可以参考我的另一篇blog，<a href="http://blog.csdn.net/wuyinlei/article/details/50570018" target="_blank" rel="external">Android Studio如何正确引入AS和ES项目</a><br>我这里是把他这里的代码copy到了自己的项目中（另一种引入项目的方式）。<br>接下来我们就来看下具体的实现吧。<br>MainActivity.java：<br>这个就简单了，布局里面就一个button用于跳转，模拟点击图片进入图片游览器中查看详情：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">public class MainActivity extends AppCompatActivity &#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onCreate(Bundle savedInstanceState) &#123;</span><br><span class="line">        super.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">        findViewById(R.id.btn_start).setOnClickListener(new OnClickListener());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    class OnClickListener implements View.OnClickListener&#123;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public void onClick(View v) &#123;</span><br><span class="line">            startActivity(new Intent(MainActivity.this,NewsViewPagerActivity.class));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>activity_mian.xml：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;LinearLayout</span><br><span class="line">    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</span><br><span class="line">    android:layout_width=&quot;match_parent&quot;</span><br><span class="line">    android:layout_height=&quot;match_parent&quot;</span><br><span class="line">    &gt;</span><br><span class="line">    &lt;Button</span><br><span class="line">        android:id=&quot;@+id/btn_start&quot;</span><br><span class="line">        android:text=&quot;点击显示图片游览器&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;/&gt;</span><br><span class="line"></span><br><span class="line">&lt;/LinearLayout&gt;</span><br></pre></td></tr></table></figure>
+<p>然后在NewsViewPagerActivity这个类中处理我们的逻辑：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br></pre></td><td class="code"><pre><span class="line">package com.example.phototour;</span><br><span class="line"></span><br><span class="line">import android.annotation.SuppressLint;</span><br><span class="line">import android.support.v4.view.PagerAdapter;</span><br><span class="line">import android.support.v4.view.ViewPager;</span><br><span class="line">import android.support.v7.app.AppCompatActivity;</span><br><span class="line">import android.os.Bundle;</span><br><span class="line">import android.view.View;</span><br><span class="line">import android.view.ViewGroup;</span><br><span class="line">import android.widget.ImageView;</span><br><span class="line">import android.widget.TextView;</span><br><span class="line"></span><br><span class="line">import com.example.phototour.photoview.HackyViewPager;</span><br><span class="line">import com.example.phototour.photoview.PhotoView;</span><br><span class="line"></span><br><span class="line">public class NewsViewPagerActivity extends AppCompatActivity &#123;</span><br><span class="line"></span><br><span class="line">    //图片资源，这个地方可以改成从网络中获取到的图片</span><br><span class="line">    private int[] images = &#123;R.mipmap.img1, R.mipmap.img2, R.mipmap.img3, R.mipmap.img4,</span><br><span class="line">            R.mipmap.img5, R.mipmap.img6&#125;;</span><br><span class="line"></span><br><span class="line">    //图片资源</span><br><span class="line">    private int[] cars = &#123;R.mipmap.car1, R.mipmap.car2, R.mipmap.car3, R.mipmap.car4, R.mipmap.car5, R.mipmap.car6, R.mipmap.car7&#125;;</span><br><span class="line"></span><br><span class="line">    //图片的文字描述，在实际项目中这个是从后台获取到的数据，在这里模拟一下</span><br><span class="line">    private String[] descs = &#123;</span><br><span class="line">            &quot;小周非常喜欢《变形金刚》系列科幻电影，于是就话了&quot; +</span><br><span class="line">                    &quot;28万好不容易的买了一台二手年龄5年的雪佛兰大黄蜂，其有这和第一步《变形金刚》基本一样的造型，非常经典美观&quot;</span><br><span class="line">            ,</span><br><span class="line">            &quot;原车主也是一位典型的《变形金刚》影迷，据悉这部电影给雪佛兰科迈罗带来了几十万台的全球销量&quot; +</span><br><span class="line">                    &quot;，小周就是其中一位，犀利的前细长的纯黑色中网显得非常精致&quot; +</span><br><span class="line">                    &quot;，引擎盖有着最纯粹的美式肌肉感&quot;</span><br><span class="line">            ,</span><br><span class="line">            &quot;但是小周花了这么贵的价钱买下来的二手大黄蜂，因为这是一台非常纯粹的美系列肌肉车，排量达到了&quot; +</span><br><span class="line">                    &quot;惊人的3.6L,加上已经5年的车龄，小周经常要去加油站加油，第一因为油耗太大，第二因为邮箱太小&quot;</span><br><span class="line">            ,</span><br><span class="line">            &quot;但是这台大黄蜂还是回头率达到了惊人的95%，很像雪佛兰迈锐宝的尾灯，给人强烈的质感，而粗狂的排气管则给人强烈的肌肉感&quot;</span><br><span class="line">            ,</span><br><span class="line">            &quot;来到这款大黄蜂的车厢，看到了这最新的三幅式的真皮多功能的方向盘，后面的换挡拨片给人强烈的操控感&quot;</span><br><span class="line">            ,</span><br><span class="line">            &quot;中控台非常简洁，但是车载导航却没有，这点需要吐槽，全程需要用手机&quot;</span><br><span class="line">            , &quot;驾驶舱是纯黑色的，而内饰采用了很&quot; +</span><br><span class="line">            &quot;高级的高级绒布材质铺就，座驾的包裹性很强，可以8向调节，按摩，座椅记忆，加热通风等功能，非常实用&quot;&#125;;</span><br><span class="line">    //photoview里面的自定义的方法  重写了onInterceptTouchEvent  onTouchEvent来处理事件</span><br><span class="line">    private HackyViewPager mViewPager;</span><br><span class="line">    //显示页数和当前页数</span><br><span class="line">    private TextView picture_iv_index;</span><br><span class="line">    //返回按钮</span><br><span class="line">    private ImageView picture_iv_back;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onCreate(Bundle savedInstanceState) &#123;</span><br><span class="line">        super.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_news_view_pager);</span><br><span class="line">        initView();</span><br><span class="line">        initParams();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    //初始化参数</span><br><span class="line">    private void initParams() &#123;</span><br><span class="line">        picture_iv_index.setText(&quot;1/&quot; + images.length + descs[0]);</span><br><span class="line">        // 绑定适配器</span><br><span class="line">        mViewPager.setAdapter(new ViewPagerAdapter());</span><br><span class="line">        //设置可以滑动监听(viewpager改变的时候调用)</span><br><span class="line">        mViewPager.setOnPageChangeListener(new ViewPagerChangeListener());</span><br><span class="line">        mViewPager.setCurrentItem(0);</span><br><span class="line">        picture_iv_back.setOnClickListener(new View.OnClickListener() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public void onClick(View v) &#123;</span><br><span class="line">                NewsViewPagerActivity.this.finish();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //初始化布局控件</span><br><span class="line">    private void initView() &#123;</span><br><span class="line">        mViewPager = (HackyViewPager) findViewById(R.id.photo_vp);</span><br><span class="line">        picture_iv_back = (ImageView) findViewById(R.id.picture_iv_back);</span><br><span class="line">        picture_iv_index = (TextView) findViewById(R.id.picture_iv_index);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 查看大图viewpager适配器</span><br><span class="line">    private class ViewPagerAdapter extends PagerAdapter &#123;</span><br><span class="line"></span><br><span class="line">        @SuppressLint(&quot;InflateParams&quot;)</span><br><span class="line">        @Override</span><br><span class="line">        public Object instantiateItem(ViewGroup container, final int position) &#123;</span><br><span class="line">            View view = getLayoutInflater().inflate(R.layout.news_picture_item, null);</span><br><span class="line">            PhotoView picture_iv_item = (PhotoView) view.findViewById(R.id.picture_iv_item);</span><br><span class="line">            // 给imageview设置一个tag，保证异步加载图片时不会乱序</span><br><span class="line">            // AsyncImageLoader.getInstance(NewsPictureActivity.this).loadBitmaps(view, picture_iv_item, ConstantsUtil.IMAGE_URL + dataList.get(position).url, LocalApplication.getInstance().screenW, 0);</span><br><span class="line">            picture_iv_item.setImageResource(cars[position]);</span><br><span class="line">            //把view加载到父容器中</span><br><span class="line">            container.addView(view);</span><br><span class="line">            return view;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public int getCount() &#123;</span><br><span class="line">            return cars.length;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public boolean isViewFromObject(View arg0, Object arg1) &#123;</span><br><span class="line">            return arg0 == arg1;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public void destroyItem(ViewGroup container, int position, Object object) &#123;</span><br><span class="line">            View view = (View) object;</span><br><span class="line">            container.removeView(view);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    // viewpager切换监听器</span><br><span class="line">    private class ViewPagerChangeListener implements ViewPager.OnPageChangeListener &#123;</span><br><span class="line">        @Override</span><br><span class="line">        public void onPageScrollStateChanged(int arg0) &#123;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public void onPageScrolled(int arg0, float arg1, int arg2) &#123;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public void onPageSelected(int arg0) &#123;</span><br><span class="line">            //设置文字</span><br><span class="line">            picture_iv_index.setText((arg0 + 1) + &quot;/&quot; + images.length + &quot; &quot; + descs[0+arg0]);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>看下activity_news_view_pager.xml：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;FrameLayout</span><br><span class="line">    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</span><br><span class="line">    android:layout_width=&quot;match_parent&quot;</span><br><span class="line">    android:layout_height=&quot;match_parent&quot;</span><br><span class="line">    android:background=&quot;@color/black&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;com.example.phototour.photoview.HackyViewPager</span><br><span class="line">        android:id=&quot;@+id/photo_vp&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;match_parent&quot;</span><br><span class="line">        android:persistentDrawingCache=&quot;animation&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ImageView</span><br><span class="line">        android:id=&quot;@+id/picture_iv_back&quot;</span><br><span class="line">        android:layout_marginLeft=&quot;10dp&quot;</span><br><span class="line">        android:layout_marginTop=&quot;24dp&quot;</span><br><span class="line">        android:scaleType=&quot;fitCenter&quot;</span><br><span class="line">        android:src=&quot;@mipmap/picture_ic_back&quot;</span><br><span class="line">        android:layout_width=&quot;36dp&quot;</span><br><span class="line">        android:layout_height=&quot;24dp&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextView</span><br><span class="line">        android:id=&quot;@+id/picture_iv_index&quot;</span><br><span class="line">        android:layout_gravity=&quot;center_vertical|bottom|left&quot;</span><br><span class="line">        android:layout_marginBottom=&quot;40dp&quot;</span><br><span class="line">        android:text=&quot;1/10&quot;</span><br><span class="line">        android:textColor=&quot;@color/white&quot;</span><br><span class="line">        android:textSize=&quot;18sp&quot;</span><br><span class="line">        android:layout_width=&quot;wrap_content&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;RelativeLayout</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_gravity=&quot;bottom&quot;</span><br><span class="line">        android:layout_marginBottom=&quot;10dp&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;ImageView</span><br><span class="line">            android:id=&quot;@+id/like&quot;</span><br><span class="line">            android:layout_marginRight=&quot;60dp&quot;</span><br><span class="line">            android:layout_centerVertical=&quot;true&quot;</span><br><span class="line">            android:src=&quot;@mipmap/listpage_more_like_normal&quot;</span><br><span class="line">            android:layout_width=&quot;wrap_content&quot;</span><br><span class="line">            android:layout_alignParentRight=&quot;true&quot;</span><br><span class="line">            android:layout_height=&quot;wrap_content&quot;/&gt;</span><br><span class="line">        &lt;ImageView</span><br><span class="line">            android:src=&quot;@mipmap/ic_repeat_white_18dp&quot;</span><br><span class="line">            android:layout_width=&quot;wrap_content&quot;</span><br><span class="line">            android:layout_marginRight=&quot;20dp&quot;</span><br><span class="line">            android:layout_centerVertical=&quot;true&quot;</span><br><span class="line">            android:layout_alignParentRight=&quot;true&quot;</span><br><span class="line">            android:layout_height=&quot;wrap_content&quot;/&gt;</span><br><span class="line">    &lt;/RelativeLayout&gt;</span><br><span class="line"></span><br><span class="line">&lt;/FrameLayout&gt;</span><br></pre></td></tr></table></figure>
+<p>news_picture_item.xml：<br>这个就更简单了，里面就只有一个photoview用来显示图片(支持缩放)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</span><br><span class="line">    android:layout_width=&quot;match_parent&quot;</span><br><span class="line">    android:layout_height=&quot;match_parent&quot;</span><br><span class="line">    android:background=&quot;@android:color/black&quot;</span><br><span class="line">    android:gravity=&quot;center&quot; &gt;</span><br><span class="line"></span><br><span class="line">    &lt;com.example.phototour.photoview.PhotoView</span><br><span class="line">        android:id=&quot;@+id/picture_iv_item&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;match_parent&quot; /&gt;</span><br><span class="line"></span><br><span class="line">&lt;/LinearLayout&gt;</span><br></pre></td></tr></table></figure></p>
+<p>好了，基本的情况就可以实现了，这里我的图片资源有限，界面的优化就暂不处理，如果需要的可以反编译一下，获得app里面的图片资源来装饰你的app吧。我们来看下效果图;<br><img src="http://img.blog.csdn.net/20160416125312509" alt="这里写图片描述"><br>好了，这里上传一下github地址，大家可以下载研究。里面的几个重要的工具类可以在项目中看到，这里就不上传代码了：<a href="https://github.com/wuyinlei/phototour" target="_blank" rel="external">https://github.com/wuyinlei/phototour</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/02/一个仿网易、今日头条的图片游览器/" data-id="cinpzenxm0001k4vpt750cbmd" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/02/仿QQ6.0侧滑之ViewDragHelper的使用（一）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          仿QQ6.0侧滑之ViewDragHelper的使用（一）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/02/自定义ImageView完成圆形头像自定义/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">自定义ImageView完成圆形头像自定义</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/02/仿QQ6.0侧滑之ViewDragHelper的使用（一）/">仿QQ6.0侧滑之ViewDragHelper的使用（一）</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/02/一个仿网易、今日头条的图片游览器/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/02/自定义ImageView完成圆形头像自定义/">自定义ImageView完成圆形头像自定义</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/02/Android Studio如何正确引入AS和ES项目/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/04/26/实现安卓app的自动更新/">实现安卓的自动更新</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Android Studio如何正确引入AS和ES项目Android Studio如何正确引入AS和ES项目通过这个文章，您可以了解一下三个方面：
+
+1、ES项目 引入到AS中
+2、AS项目引入到AS中
+3、AS中添加jar包和第三方依赖库
+4、如何快速引入github上开源框架
+5、在引入项目出现一下错误的解决方式
+
+现在的项目无非两种，一种是ADT ,一种是AS（Android Studi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/05/02/Android Studio如何正确引入AS和ES项目/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Android Studio如何正确引入AS和ES项目Android Studio如何正确引入AS和ES项目通过这个文章，您可以了解一下三个方面：
+
+1、ES项目 引入到AS中
+2、AS项目引入到AS中
+3、AS中添加jar包和第三方依赖库
+4、如何快速引入github上开源框架
+5、在引入项目出现一下错误的解决方式
+
+现在的项目无非两种，一种是ADT ,一种是AS（Android Studi">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006jcGvzjw1f1t7ee8drfj30cb02jjrr.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006jcGvzjw1f09g7s5wx0j310h0hi7bh.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006jcGvzjw1f09g8n90ttj30wt0n079e.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006jcGvzjw1f09g8vvuu8j30r50bomz2.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/006jcGvzjw1f09g91aoigj30sc0i2jua.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006jcGvzjw1f09g96e1ncj30rv0hqjy6.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006jcGvzjw1f09g9d8a0uj30rl0h6gq0.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006jcGvzjw1f09ga8lp7oj30rw0cbwij.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006jcGvzjw1f09g9rus9ej30cy06n74f.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006jcGvzjw1f09gfy8hxuj31800h2agz.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006jcGvzjw1f09gg3ibi6j30zg0can20.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006jcGvzjw1f1t7ee8drfj30cb02jjrr.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006jcGvzjw1f1t7ivsk1fj30ca03tt9e.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006jcGvzjw1f1t7mz0c7jj30la0bgad0.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006jcGvzjw1f09gp3prghj31at0kk46q.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006jcGvzjw1f09gpb1untj30z00fftcq.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006jcGvzjw1f09gx86dqij31510ldwmb.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006jcGvzjw1f09gxdq5d5j30un0hun24.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006jcGvzjw1f09hf33itwj318s08y443.jpg">
+<meta property="og:image" content="http://img.blog.csdn.net/20160126145533241">
+<meta property="og:updated_time" content="2016-05-02T12:22:03.943Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="Android Studio如何正确引入AS和ES项目Android Studio如何正确引入AS和ES项目通过这个文章，您可以了解一下三个方面：
+
+1、ES项目 引入到AS中
+2、AS项目引入到AS中
+3、AS中添加jar包和第三方依赖库
+4、如何快速引入github上开源框架
+5、在引入项目出现一下错误的解决方式
+
+现在的项目无非两种，一种是ADT ,一种是AS（Android Studi">
+<meta name="twitter:image" content="http://ww4.sinaimg.cn/large/006jcGvzjw1f1t7ee8drfj30cb02jjrr.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Android Studio如何正确引入AS和ES项目" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/02/Android Studio如何正确引入AS和ES项目/" class="article-date">
+  <time datetime="2016-05-02T12:21:59.722Z" itemprop="datePublished">2016-05-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="Android-Studio如何正确引入AS和ES项目"><a href="#Android-Studio如何正确引入AS和ES项目" class="headerlink" title=" Android Studio如何正确引入AS和ES项目"></a> Android Studio如何正确引入AS和ES项目</h2><h1 id="Android-Studio如何正确引入AS和ES项目-1"><a href="#Android-Studio如何正确引入AS和ES项目-1" class="headerlink" title="Android Studio如何正确引入AS和ES项目"></a>Android Studio如何正确引入AS和ES项目</h1><p>通过这个文章，您可以了解一下三个方面：</p>
+<ul>
+<li>1、ES项目 引入到AS中</li>
+<li>2、AS项目引入到AS中</li>
+<li>3、AS中添加jar包和第三方依赖库</li>
+<li>4、如何快速引入github上开源框架</li>
+<li>5、在引入项目出现一下错误的解决方式<br><img src="http://ww4.sinaimg.cn/large/006jcGvzjw1f1t7ee8drfj30cb02jjrr.jpg" alt=""></li>
+</ul>
+<p>现在的项目无非两种，一种是ADT ,一种是AS（Android Studio）,那么我们先来看下ADT中的项目怎么引入到AS中的吧。还是直接上图吧，说也是说不太清楚的哈。</p>
+<p>#####我先解释一下，这里我导入的都是在同一个project中，也就是一个工程目录下，也即是没有新建窗体，这里说明一点eclipse中的project == AS中的module（这一点很重要）</p>
+<p>##<strong>首先看下ES项目怎么导入到AS中</strong></p>
+<p>####第一步<br><img src="http://ww4.sinaimg.cn/large/006jcGvzjw1f09g7s5wx0j310h0hi7bh.jpg" alt=""></p>
+<p>####第二步<br><img src="http://ww4.sinaimg.cn/large/006jcGvzjw1f09g8n90ttj30wt0n079e.jpg" alt=""></p>
+<p>####第三步<br><img src="http://ww2.sinaimg.cn/large/006jcGvzjw1f09g8vvuu8j30r50bomz2.jpg" alt=""></p>
+<p>####第四步<br><img src="http://ww2.sinaimg.cn/large/006jcGvzjw1f09g91aoigj30sc0i2jua.jpg" alt=""></p>
+<p>####第五步<br><img src="http://ww4.sinaimg.cn/large/006jcGvzjw1f09g96e1ncj30rv0hqjy6.jpg" alt=""></p>
+<p>####第六步<br><img src="http://ww3.sinaimg.cn/large/006jcGvzjw1f09g9d8a0uj30rl0h6gq0.jpg" alt=""></p>
+<p>####第七步<br><img src="http://ww1.sinaimg.cn/large/006jcGvzjw1f09ga8lp7oj30rw0cbwij.jpg" alt=""></p>
+<p>####点击运行<br><img src="http://ww3.sinaimg.cn/large/006jcGvzjw1f09g9rus9ej30cy06n74f.jpg" alt=""></p>
+<p>##<strong>接下来看下AS项目导入到AS中</strong><br>原理是一样的，前面的步骤也是一样的，这里就不多作解释了。</p>
+<p>####第一步<br><img src="http://ww1.sinaimg.cn/large/006jcGvzjw1f09gfy8hxuj31800h2agz.jpg" alt=""></p>
+<p>####第二步<br>其实都是一样的，直接一路默认即可<br><img src="http://ww4.sinaimg.cn/large/006jcGvzjw1f09gg3ibi6j30zg0can20.jpg" alt=""></p>
+<p>###这里我声明一下，无论是ES项目还是AS项目，导入的时候都可能有一下的错误(这里的14可能是17、18、、、等等)<br><img src="http://ww4.sinaimg.cn/large/006jcGvzjw1f1t7ee8drfj30cb02jjrr.jpg" alt=""></p>
+<ul>
+<li>出错原因：本地没有改项目的目标版本</li>
+<li>解决方法<ul>
+<li>第一种方式：打开SDK Manager下载提示的版本</li>
+<li>第二种方式：<ul>
+<li>首先，调整工程目录为Project目录结构，进入你所导入的项目的build.gradle文件中<br><img src="http://ww4.sinaimg.cn/large/006jcGvzjw1f1t7ivsk1fj30ca03tt9e.jpg" alt=""> </li>
+<li>然后我们在build.gradle目录中改一下几个标记点<br><img src="http://ww3.sinaimg.cn/large/006jcGvzjw1f1t7mz0c7jj30la0bgad0.jpg" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>下面看下我们添加jar、library吧<br>首先添加library(也可以是module(只不过library和module的创建方式有的不一样，我们在新建的时候可以选择module，也可以选择创建一个library))依赖吧</p>
+<p>###第一步<br><img src="http://ww3.sinaimg.cn/large/006jcGvzjw1f09gp3prghj31at0kk46q.jpg" alt=""></p>
+<p>###第二步<br><img src="http://ww1.sinaimg.cn/large/006jcGvzjw1f09gpb1untj30z00fftcq.jpg" alt=""></p>
+<p>##<strong>还有的就是我们下载的第三方依赖库，或者是我们的一个module想要依赖我们的另一个写好的控件库（作为依赖）</strong></p>
+<p>###第一步<br><img src="http://ww1.sinaimg.cn/large/006jcGvzjw1f09gx86dqij31510ldwmb.jpg" alt=""></p>
+<p>###第二步<br><img src="http://ww3.sinaimg.cn/large/006jcGvzjw1f09gxdq5d5j30un0hun24.jpg" alt=""></p>
+<p>##<strong>接下来我们来看下引入github上的开源框架</strong><br>在这里我们以okhttp为例。</p>
+<p>###第一步<br>找到okhttp的网址 <a href="https://github.com/square/okhttp。" target="_blank" rel="external">https://github.com/square/okhttp。</a></p>
+<p>在里面找到   <code>compile &#39;com.squareup.okhttp3:okhttp:3.0.1&#39;</code>  这一句话，一般的都是有的。</p>
+<p>###第二步<br>打开我们项目的额build.gradle<br><img src="http://ww4.sinaimg.cn/large/006jcGvzjw1f09hf33itwj318s08y443.jpg" alt=""></p>
+<p>##<strong>删除项目</strong><br><img src="http://img.blog.csdn.net/20160126145533241" alt="这里写图片描述"><br>好了，如果有什么疑问，或者有何交流，可以联系我哦。  </p>
+<ul>
+<li>QQ:1069584784,您若是感觉有用就支持一下哈。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/02/Android Studio如何正确引入AS和ES项目/" data-id="cinpzenx70000k4vpdyeudirc" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/02/自定义ImageView完成圆形头像自定义/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          自定义ImageView完成圆形头像自定义
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/04/26/实现安卓app的自动更新/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">实现安卓的自动更新</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/02/仿QQ6.0侧滑之ViewDragHelper的使用（一）/">仿QQ6.0侧滑之ViewDragHelper的使用（一）</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/02/一个仿网易、今日头条的图片游览器/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/02/自定义ImageView完成圆形头像自定义/">自定义ImageView完成圆形头像自定义</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/02/Android Studio如何正确引入AS和ES项目/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/04/26/实现安卓app的自动更新/">实现安卓的自动更新</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
